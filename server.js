@@ -4,7 +4,7 @@ const ShortUrl = require('./models/shortUrl')
 const app = express()
 const dotenv = require("dotenv");
 
-dotenv.config({path: "./config/config.env"});
+dotenv.config({path: "config.env"});
 mongoose.connect(process.env.DB_URI, {
   useNewUrlParser: true, useUnifiedTopology: true
 })
